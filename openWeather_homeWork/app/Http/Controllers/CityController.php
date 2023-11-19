@@ -24,7 +24,9 @@ class CityController extends Controller
         // Create a new city in the database
         $city = City::create($validatedData);
 
-        return response('City was succesfully added!', 200);
+        return redirect()
+            ->route('weathers.index')
+            ->with('City is added!');
     }
 
 }
