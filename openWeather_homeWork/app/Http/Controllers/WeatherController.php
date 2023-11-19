@@ -10,15 +10,9 @@ class WeatherController extends Controller
 {
     public function index()
     {
-        return Weather::all();
-    }
+        $weathers = Weather::all();
 
-    public function create()
-    {
-    }
-
-    public function store(Request $request)
-    {
+        return view('index', compact('weathers'));
     }
 
     public function showWeatherByCityName($cityName)
@@ -34,15 +28,4 @@ class WeatherController extends Controller
         return $weathers;
     }
 
-    public function edit($id)
-    {
-    }
-
-    public function update(Request $request, $id)
-    {
-    }
-
-    public function destroy($id)
-    {
-    }
 }

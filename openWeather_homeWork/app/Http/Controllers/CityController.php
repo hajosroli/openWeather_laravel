@@ -12,11 +12,6 @@ class CityController extends Controller
         return City::all();
     }
 
-    public function create()
-    {
-
-    }
-
     public function storeCity(Request $request)
     {
         // Validate the request data
@@ -32,19 +27,4 @@ class CityController extends Controller
         return response('City was succesfully added!', 200);
     }
 
-    public function show(City $city)
-    {
-    }
-
-    public function edit(City $city)
-    {
-    }
-
-    public function update(Request $request, City $city)
-    {
-    }
-
-    public function destroy(City $city)
-    {
-    }
 }
