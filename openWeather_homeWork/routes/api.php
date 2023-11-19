@@ -20,7 +20,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 // Get Weather data
-Route::get('/weathers', [WeatherController::class, 'index'])->name('weathers.index');
+Route::get('/weather', [WeatherController::class, 'index'])->name('weather.index');
 
 // Get Weather of City
 Route::get('/getWeather/{city}', [WeatherController::class, 'showWeatherByCityName']);
