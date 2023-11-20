@@ -16,7 +16,7 @@ This Laravel project integrates with the OpenWeather API to fetch and store weat
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/openweather-laravel.git
+git clone https://github.com/hajosroli/openweather-laravel.git
 cd openweather-laravel
 ```  
    
