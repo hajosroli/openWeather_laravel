@@ -9,7 +9,7 @@ This Laravel project integrates with the OpenWeather API to fetch and store weat
 - PHP (>=7.3)
 - Composer
 - MySQL
-- Laravel (>=8.0)
+- Laravel (>=9.0)
 
 ### Installation
 
